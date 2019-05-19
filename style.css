@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr repeat(5, 1fr);
+    /*grid-gap: 1px;*/
+    width: 300px;
+    height: 480px;
+    background-color: silver;
+    border: 1px solid black;
+    grid-gap: 1px;
+    margin: auto;
+}
+
+div, h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.displayBox {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    background-color: white;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.display {
+    font-size: 18px;
+    background-color: white;
+    margin: 0;
+    color: gray;
+}
+
+.input {
+    font-size: 36px;
+    background-color: white;
+    margin: 0;
+    margin-top: auto;
+}
+
+.key {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.key:hover {
+    
+    background-color: gainsboro;
+    transition: all 0s linear 0s;
+}
+
+.header {
+    text-align: center;
+
+}
