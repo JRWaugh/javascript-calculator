@@ -45,7 +45,7 @@ function updateDisplay() {
         if (keys.includes(this.id) || this.id == '=') {
             /*Add the current number to the operation array and reset the input.textContent variable
             if the input is not an empty string from the CE operation*/
-            if (input.textContent != "") {
+            if (input.textContent != "" && input.textContent != ".") {
                 operation.push(input.textContent)
             }
             input.textContent = ""
